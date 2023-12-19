@@ -8,5 +8,5 @@ app.get('/',(request , response) => {
     return response.status(234).send('Welcome to MERN stack tutorial')
 });
 app.listen(PORT, () => {
-    console.log("App is listening to PORT: ${PORT}");
+    console.log(`App is listening to PORT: ${PORT}`);
 });
