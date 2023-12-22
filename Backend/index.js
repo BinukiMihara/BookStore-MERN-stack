@@ -12,15 +12,15 @@ app.use(express.json());
 
 //Middleware for handling CORS POLICY
 //opt 1: Allow all origins with default default of cors
-//app.use(cors());
+app.use(cors());
 //opt2: Allow Custom origins
-app.use(
-  cors({
-    origin: "http://localhost:5555/books",
-    methods: ["GET", "POST", "PUT", "DELETE"],
-    allowedHeaders: ["Content-Type"],
-  })
-);
+//app.use(
+// cors({
+//  origin: "http://localhost:5555/books",
+// methods: ["GET", "POST", "PUT", "DELETE"],
+// allowedHeaders: ["Content-Type"],
+//})
+//);
 
 app.get("/", (request, response) => {
   console.log(request);
