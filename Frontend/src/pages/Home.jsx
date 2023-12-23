@@ -12,7 +12,7 @@ const Home = () => {
   const [loading, setLoading] = useState([false]);
   useEffect(() => {
     setLoading(true);
-    axios.get('http://localhost:5555/books')
+    axios.get(`http://localhost:5555/books`)
     .then((response) => {
       setBooks(response.data.data);
       setLoading(false);
